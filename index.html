@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        background-image: url(12.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .text-1{
+        translate: 140px 0px;
+        color: green;
+        font-size: 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        animation: text 5s linear infinite;
+    }
+    @keyframes text {
+        from{
+            filter: hue-rotate(360deg);
+            transform: scale(1.2);
+        }
+        to{
+            filter: hue-rotate(90deg);
+            transform: scale(1.1);
+        }
+    }
+
+    img{
+        translate: 160px 0px;
+        border-radius: 50%;
+        animation: img .7s linear infinite;
+        width: 120px;
+    }
+    @keyframes img {
+        from{
+            box-shadow: 0 0 5px white;
+        }
+        to{
+            box-shadow: 0 0 35px goldenrod;
+        }
+    }
+
+
+    iframe{
+        border-radius: 10px;
+        translate: 40px 80px;
+        width: 320px;
+        height: 420px;
+    }
+</style>
+
+<body>
+    <h1 class="text-1">Wese Atia</h1>
+    <img src="pic.jpg" alt="">
+    <div class="border">
+        <iframe src="https://www.sarhne.com/wese123wese123" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
